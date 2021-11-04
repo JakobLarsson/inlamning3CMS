@@ -9,22 +9,10 @@ $pageImageArray = get_field('page_img');
 $pageImage = $pageImageArray['sizes']['large'];
 ?>
 
-<div class="content">
-  <div class="main-box-left">
-   <div>
-<h1 class="display-1">h1</h1>
-   </div>
-  <div>
-<p><?php echo $description ?></p>
-  </div>
-  <div>
-<a class="btn btn-primary" href="#">klicka här</a>
-  </div>
-  
-  </div>
-  <div class="main-box-right">
-   <img class="main-img"  src="<?php echo $pageImage; ?>">
-  </div>
+<div class="first-view">
+    <div class="main-text">
+    <p data-text="PSYCHO">PSYCHO</p>
+    </div>
 </div>
 
 
