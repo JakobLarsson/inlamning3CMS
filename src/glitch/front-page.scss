@@ -1,0 +1,22 @@
+#content-frontpage{
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+#wrapper-frontpage{
+    
+    background-color: blue;
+    
+}
+.sub {
+	color: rgb(100,220,220);
+	letter-spacing: 1em;
+}
+.sub-bigger {
+	color: rgb(100,220,220);
+	letter-spacing:0.2rem ;
+    font-size: larger;
+}
