@@ -1,14 +1,14 @@
 #content-frontpage{
     height: 100vh;
-    background-color: red;
+    background-image: linear-gradient(to right top, #002d71, #61247e, #a40072, #d5004e, #eb1212);
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: right;
+    text-align: center;
 }
 #wrapper-frontpage{
     
-    background-color: blue;
+   
     
 }
 .sub {
@@ -19,4 +19,7 @@
 	color: rgb(100,220,220);
 	letter-spacing:0.2rem ;
     font-size: larger;
+}
+.img-fpage{
+    width: 500px;
 }
