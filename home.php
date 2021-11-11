@@ -1,12 +1,36 @@
 <?php
-
 get_header();
 ?>
+<div class="content-home">
+<div class="container">
+<div class="row justify-content-evenly align-items-center">
+<?php
+if ( have_posts() ) :
+	while ( have_posts() ) : the_post();
+        ?>
+        
+            <div  class="col-md-4 single-post">
+            <?php
+		the_title( '<h2>', '</h2>' );
+		the_post_thumbnail('medium');
+		the_excerpt();
+        ?>
+        <a href="<?php echo the_permalink(); ?>">Link to Post</a>
+		
+            </div>
+     
+<?php
+    
+	endwhile;
+else:
+	_e( 'Sorry, no posts matched your criteria.', 'textdomain' );
+endif;?>
+</div>
+</div>
+</div>
 
-<ul>
-<?php $the_query = new WP_Query( 'showposts=5' ); ?> <!-- change the number "5" to the number of posts you want to display -->
-<?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
-<li><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>
-<li><?php the_excerpt(__('(weiterlesen)')); ?></li> <!-- change "weiterlesen" to the value you want to display as "read more..." -->
-<?php endwhile;?>
-</ul>
+
+
+<?php
+get_footer();
+?>
