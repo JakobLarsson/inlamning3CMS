@@ -21,3 +21,6 @@ function register_navwalker(){
 add_action( 'after_setup_theme', 'register_navwalker' );
 
 add_theme_support( 'post-thumbnails' );
+
+function my_function_admin_bar(){ return false; }
+add_filter( 'show_admin_bar' , 'my_function_admin_bar');

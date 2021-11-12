@@ -11,7 +11,7 @@
 </head>
 <body>
 <header id="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light ">
       <div class="container">
       <?php
         if ( function_exists( 'the_custom_logo' ) ) {
