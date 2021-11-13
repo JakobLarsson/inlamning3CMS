@@ -3,7 +3,7 @@
 get_header();
 
 $big = get_field('big-text');
-$small1 = get_field('small-text1');
+$link = get_field('link');
 $small2 = get_field('small-text2');
 $pageImageArray = get_field('img');
 $pageImage = $pageImageArray['sizes']['large'];
@@ -11,7 +11,7 @@ $pageImage = $pageImageArray['sizes']['large'];
 
 <div id="content-frontpage">
 	<div id="wrapper-frontpage">
-		<!-- Make sure data-text equals the text you put inside the tags. -->
+        <div class="container">
         <div class="img">
             <img class="img-fpage" src="<?php echo $pageImage ?>" alt="">
         </div>
@@ -23,8 +23,11 @@ $pageImage = $pageImageArray['sizes']['large'];
         <span class="sub"><?php echo $small2 ?></span>
         </div>
 
-		
-        <button>Click me</button>
+		<a href="<?php echo $link ?>" class="btn btn-primary mt-3"> Click me</a>
+        
+        </div>
+		<!-- Make sure data-text equals the text you put inside the tags. -->
+        
 	</div>
 </div>
 

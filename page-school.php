@@ -36,7 +36,7 @@ $pageImage = $pageImageArray['sizes']['large'];
 		
 
 		
-        <button>Click me</button>
+        
 	</div>
 </div>
 
