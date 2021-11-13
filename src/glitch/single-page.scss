@@ -1,16 +1,23 @@
-
-.content-home{
+.content-home-single{
     background-image: linear-gradient(to right top, #002d71, #61247e, #a40072, #d5004e, #eb1212);
     min-height: 100vh;
     padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.single-post{
-    border: 1px solid rgb(0 0 0 / 20%);
-    border-radius: 5px;
-    margin: 10px;
+.single-text{
     text-align: center;
-    height: 600px;
-    color: rgb(100,220,220);
+    color: white;
+}
+.single-text p{
+    
+    color: white
+}
+
+.single-img img{
+    width: 100%;
+    height: auto;
 }
 .single-post img{
     
